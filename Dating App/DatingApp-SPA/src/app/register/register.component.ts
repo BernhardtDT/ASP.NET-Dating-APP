@@ -10,7 +10,7 @@ export class RegisterComponent implements OnInit {
   model: any = {};
   @Output() cancelRegister = new EventEmitter();
 
-  constructor(private authService: AuthService) { }
+  constructor(private authService: AuthService) {}
 
   ngOnInit(): void {
   }
@@ -29,5 +29,4 @@ export class RegisterComponent implements OnInit {
     this.cancelRegister.emit(false);
     console.log('cancelled');
   }
-
 }
